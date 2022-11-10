@@ -1,0 +1,8 @@
+{
+  "name": "sample-copy-files-s3",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/pubsub": "3.2.1",
+    "@google-cloud/storage": "6.7.0"
+  }
+}
