@@ -28,7 +28,7 @@ gcloud storage buckets notifications create gs://tt-input --topic=tt-input-topic
 
 **Implantar cloud function**
 ```bash
-gcloud functions deploy function-tech-talks --trigger-topic=tt-input-topic --runtime nodejs16
+gcloud functions deploy functionTechTalks --trigger-topic=tt-input-topic --runtime nodejs16 --region southamerica-east1
 ```
 
 **Enviar arquivos para o bucket de input**
