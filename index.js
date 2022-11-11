@@ -2,7 +2,7 @@
 const {Storage} = require('@google-cloud/storage');
 const destBucketName = "tt-output";
 
-exports.listenStorageTechTalks = (event, context) => {
+exports.functionTechTalks = (event, context) => {
 
   const storage = new Storage();
 

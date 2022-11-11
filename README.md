@@ -26,6 +26,11 @@ gsutil mb -c nearline -l southamerica-east1 gs://tt-output
 gcloud storage buckets notifications create gs://tt-input --topic=tt-input-topic
 ```
 
+**Implantar cloud function**
+```bash
+gcloud functions deploy function-tech-talks --trigger-topic=tt-input-topic --runtime nodejs16
+```
+
 **Enviar arquivos para o bucket de input**
 ```bash
 gsutil rsync C:\temp\input-sync gs://tt-input
